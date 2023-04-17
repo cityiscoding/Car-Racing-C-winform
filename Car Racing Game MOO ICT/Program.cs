@@ -16,7 +16,11 @@ namespace Car_Racing_Game_MOO_ICT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmManHinhChinh());
+        }
+        public static void ExitApplication()
+        {
+            Application.Exit();
         }
     }
 }

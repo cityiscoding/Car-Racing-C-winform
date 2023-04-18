@@ -78,7 +78,7 @@
             this.frmGame2.Location = new System.Drawing.Point(437, 298);
             this.frmGame2.Name = "frmGame2";
             this.frmGame2.Size = new System.Drawing.Size(221, 55);
-            this.frmGame2.TabIndex = 4;
+            this.frmGame2.TabIndex = 2;
             this.frmGame2.Text = "2 Người Chơi";
             this.frmGame2.UseVisualStyleBackColor = true;
             this.frmGame2.Click += new System.EventHandler(this.button3_Click);
@@ -92,9 +92,12 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmManHinhChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManHinhChinh";
+            this.Deactivate += new System.EventHandler(this.frmManHinhChinh_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmManHinhChinh_FormClosing);
             this.Load += new System.EventHandler(this.frmManHinhChinh_Load);
             this.ResumeLayout(false);

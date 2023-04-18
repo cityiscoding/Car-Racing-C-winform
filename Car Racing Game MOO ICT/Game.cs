@@ -236,6 +236,13 @@ namespace Car_Racing_Game_MOO_ICT
 
         }
 
+        private void btnEnd_Click(object sender, EventArgs e)
+        {
+            frmManHinhChinh frmManHinhChinh = new frmManHinhChinh();
+            this.Hide();
+            frmManHinhChinh.Show();
+        }
+
         private void playSound()
         {
             System.Media.SoundPlayer playCrash = new System.Media.SoundPlayer(Properties.Resources.hit);

@@ -43,6 +43,7 @@
             this.txtScore = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.explosion2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player1)).BeginInit();
@@ -179,24 +180,24 @@
             // txtScore
             // 
             this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtScore.Location = new System.Drawing.Point(199, 657);
+            this.txtScore.Location = new System.Drawing.Point(2, 677);
             this.txtScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(267, 46);
-            this.txtScore.TabIndex = 5;
+            this.txtScore.Size = new System.Drawing.Size(243, 46);
+            this.txtScore.TabIndex = 0;
             this.txtScore.Text = "Score: 0";
             this.txtScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(274, 724);
+            this.btnStart.Location = new System.Drawing.Point(283, 673);
             this.btnStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(132, 50);
-            this.btnStart.TabIndex = 4;
+            this.btnStart.TabIndex = 1;
             this.btnStart.Tag = "btnStart";
-            this.btnStart.Text = "Start";
+            this.btnStart.Text = "Chơi Lại";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.restartGame);
             // 
@@ -206,11 +207,26 @@
             this.gameTimer.Interval = 20;
             this.gameTimer.Tick += new System.EventHandler(this.gameTimer_Tick);
             // 
+            // btnExit
+            // 
+            this.btnExit.AutoEllipsis = true;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(443, 673);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(132, 50);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Tag = "btnExit";
+            this.btnExit.Text = "Thoát ";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmGame2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 787);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.btnStart);
@@ -249,5 +265,6 @@
         private System.Windows.Forms.PictureBox player1;
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.PictureBox explosion2;
+        private System.Windows.Forms.Button btnExit;
     }
 }

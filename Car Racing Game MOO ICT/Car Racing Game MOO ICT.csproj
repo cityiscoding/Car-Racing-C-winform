@@ -138,9 +138,6 @@
     <None Include="Resources\gold.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\hit.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\roadTrack.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TruckWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\music.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -164,6 +164,7 @@ namespace Car_Racing_Game_MOO_ICT
             award.Visible = true;
             award.BringToFront();
             btnStart.Enabled = true;
+            btnExit.Enabled = true;
         }
         private void playSound2()
         {
@@ -174,6 +175,7 @@ namespace Car_Racing_Game_MOO_ICT
         private void ResetGame()
         {
             btnStart.Enabled = false;
+            btnExit.Enabled = false;
             explosion.Visible = false;
             award.Visible = false;
             goleft = false;
@@ -208,6 +210,13 @@ namespace Car_Racing_Game_MOO_ICT
             frmManHinhChinh mhc = new frmManHinhChinh();
             this.Hide();
             mhc.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmManHinhChinh frmManHinhChinh = new frmManHinhChinh();
+            this.Hide();
+            frmManHinhChinh.Show();
         }
 
 

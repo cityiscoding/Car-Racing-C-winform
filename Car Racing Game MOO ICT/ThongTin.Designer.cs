@@ -191,6 +191,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThongTin";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmThongTin_FormClosing);
+            this.Load += new System.EventHandler(this.frmThongTin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

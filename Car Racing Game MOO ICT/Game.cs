@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -189,11 +190,15 @@ namespace Car_Racing_Game_MOO_ICT
             award.BringToFront();
 
             btnStart.Enabled = true;
+            btnExit.Enabled = true;
+            using (StreamWriter writer = new StreamWriter("C:\\Project_Work\\Visual studio\\Top-Down-Car-Racing-game-in-windows-form\\Car Racing Game MOO ICT\\Score\\score.txt", true))
+            {
+                writer.WriteLine(score.ToString());
+            }
         }
-
         private void ResetGame()
         {
-
+            btnExit.Enabled = false;
             btnStart.Enabled = false;
             explosion.Visible = false;
             award.Visible = false;
@@ -230,12 +235,6 @@ namespace Car_Racing_Game_MOO_ICT
             this.Hide();
             mhc.Show();
         }
-
-        private void roadTrack2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnEnd_Click(object sender, EventArgs e)
         {
             frmManHinhChinh frmManHinhChinh = new frmManHinhChinh();

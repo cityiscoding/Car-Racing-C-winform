@@ -135,7 +135,6 @@
             this.roadTrack2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.roadTrack2.TabIndex = 4;
             this.roadTrack2.TabStop = false;
-            this.roadTrack2.Click += new System.EventHandler(this.roadTrack2_Click);
             // 
             // roadTrack1
             // 
@@ -186,7 +185,7 @@
             this.btnExit.Size = new System.Drawing.Size(132, 50);
             this.btnExit.TabIndex = 0;
             this.btnExit.TabStop = false;
-            this.btnExit.Tag = "btnExit";
+            this.btnExit.Tag = "";
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnEnd_Click);
@@ -200,7 +199,10 @@
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Car Racing Game MOO ICT";

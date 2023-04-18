@@ -48,15 +48,6 @@ namespace Car_Racing_Game_MOO_ICT
             player = new SoundPlayer(@"C:\Project_Work\Visual studio\Top-Down-Car-Racing-game-in-windows-form\Car Racing Game MOO ICT\Resources\music.wav");
             player.PlayLooping(); // Phát âm thanh liên tục 
         }
-        private void frmManHinhChinh_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (player != null)
-            {
-                player.Stop(); // Dừng phát âm thanh nếu đang phát
-                player.Dispose(); // Giải phóng tài nguyên của đối tượng SoundPlayer
-            }
-            Program.ExitApplication();
-        }
 
         private void frmManHinhChinh_Deactivate(object sender, EventArgs e)
         {
@@ -64,6 +55,18 @@ namespace Car_Racing_Game_MOO_ICT
             {
                 player.Stop(); // Dừng phát âm thanh nếu đang phát
             }
+        }
+
+        private void frmManHinhChinh_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Program.ExitApplication();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            frmHighCore frmHighCore = new frmHighCore();
+            this.Hide();
+            frmHighCore.Show();
         }
     }
 }

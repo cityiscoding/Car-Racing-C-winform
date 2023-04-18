@@ -230,6 +230,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.btnStart);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmGame2";
             this.Text = "Game2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGame2_FormClosing);

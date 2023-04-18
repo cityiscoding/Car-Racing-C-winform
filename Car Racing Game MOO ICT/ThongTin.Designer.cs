@@ -187,11 +187,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmThongTin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThongTin";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmThongTin_FormClosing);
-            this.Load += new System.EventHandler(this.frmThongTin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

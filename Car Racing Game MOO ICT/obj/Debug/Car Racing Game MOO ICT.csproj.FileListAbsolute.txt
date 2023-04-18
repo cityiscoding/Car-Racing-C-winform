@@ -21,3 +21,4 @@ C:\Project_Work\Visual studio\Top-Down-Car-Racing-game-in-windows-form\Car Racin
 C:\Project_Work\Visual studio\Top-Down-Car-Racing-game-in-windows-form\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmThongTin.resources
 C:\Project_Work\Visual studio\Top-Down-Car-Racing-game-in-windows-form\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmManHinhChinh.resources
 C:\Project_Work\Visual studio\Top-Down-Car-Racing-game-in-windows-form\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmGame2.resources
+C:\Project_Work\Visual studio\Top-Down-Car-Racing-game-in-windows-form\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmHighCore.resources

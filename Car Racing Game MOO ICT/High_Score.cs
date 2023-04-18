@@ -59,5 +59,11 @@ namespace Car_Racing_Game_MOO_ICT
             }
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmManHinhChinh frmManHinhChinh = new frmManHinhChinh();
+            this.Hide();
+            frmManHinhChinh.Show();
+        }
     }
 }

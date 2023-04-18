@@ -68,5 +68,33 @@ namespace Car_Racing_Game_MOO_ICT
             this.Hide();
             frmHighCore.Show();
         }
+
+        private void picBackgound_Click(object sender, EventArgs e)
+        {
+            // Tạo mới một PictureBox
+            PictureBox pictureBox1 = new PictureBox();
+
+            // Thiết lập kích thước và vị trí của PictureBox
+            pictureBox1.Size = new Size(100, 100);
+            pictureBox1.Location = new Point(50, 50);
+
+            // Thiết lập hình ảnh cho PictureBox
+            pictureBox1.Image = Image.FromFile("C:\\Project_Work\\Visual studio\\Top-Down-Car-Racing-game-in-windows-form\\Car Racing Game MOO ICT\\Resources\\mainpic.jpg");
+
+            // Đưa PictureBox xuống vị trí dưới cùng của các control khác trên form
+            pictureBox1.SendToBack();
+            button1.BringToFront();
+            button2.BringToFront();
+            button3.BringToFront();
+            frmGame2.BringToFront();
+            label1.BringToFront();
+
+            // Thêm PictureBox vào form
+            this.Controls.Add(pictureBox1);
+
+            // Đặt thuộc tính TabStop của PictureBox thành false
+            pictureBox1.TabStop = false;
+        }
+
     }
 }

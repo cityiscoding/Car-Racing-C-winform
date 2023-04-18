@@ -103,20 +103,20 @@ namespace Car_Racing_Game_MOO_ICT
                 gameOver();
             }
 
-            if (score > 1 && score < 500)
+            if (score > 1 && score < 300)
             {
-                award.Image = Properties.Resources.gold;
+                award.Image = Properties.Resources.bronze;
             }
 
 
-            if (score > 500 && score < 2000)
+            if (score > 300 && score < 1000)
             {
                 award.Image = Properties.Resources.silver;
                 roadSpeed = 20;
                 trafficSpeed = 22;
             }
 
-            if (score > 2000)
+            if (score > 1000)
             {
                 award.Image = Properties.Resources.gold;
                 trafficSpeed = 27;
@@ -240,6 +240,11 @@ namespace Car_Racing_Game_MOO_ICT
             frmManHinhChinh frmManHinhChinh = new frmManHinhChinh();
             this.Hide();
             frmManHinhChinh.Show();
+        }
+
+        private void roadTrack2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void playSound()

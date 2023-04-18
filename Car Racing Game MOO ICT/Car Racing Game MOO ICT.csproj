@@ -159,6 +159,7 @@
     <None Include="Resources\TruckWhite.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\mainpic.jpg" />
     <Content Include="Resources\music.wav" />
     <Content Include="Score\score.txt" />
   </ItemGroup>

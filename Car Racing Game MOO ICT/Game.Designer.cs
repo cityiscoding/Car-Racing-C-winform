@@ -135,6 +135,7 @@
             this.roadTrack2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.roadTrack2.TabIndex = 4;
             this.roadTrack2.TabStop = false;
+            this.roadTrack2.Click += new System.EventHandler(this.roadTrack2_Click);
             // 
             // roadTrack1
             // 

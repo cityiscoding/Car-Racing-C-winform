@@ -62,7 +62,6 @@ namespace Car_Racing_Game_MOO_ICT
             txtScore.Text = "Score: " + score;
             score++;
 
-
             if (goleft == true && player.Left > 10)
             {
                 player.Left -= playerSpeed;

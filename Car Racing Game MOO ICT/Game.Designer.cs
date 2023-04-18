@@ -127,7 +127,7 @@
             // roadTrack2
             // 
             this.roadTrack2.Image = global::Car_Racing_Game_MOO_ICT.Properties.Resources.roadTrack;
-            this.roadTrack2.Location = new System.Drawing.Point(0, 0);
+            this.roadTrack2.Location = new System.Drawing.Point(0, -2);
             this.roadTrack2.Margin = new System.Windows.Forms.Padding(4);
             this.roadTrack2.Name = "roadTrack2";
             this.roadTrack2.Size = new System.Drawing.Size(633, 648);
@@ -150,7 +150,7 @@
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(249, 726);
+            this.btnStart.Location = new System.Drawing.Point(265, 724);
             this.btnStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(132, 50);
@@ -179,7 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1341, 787);
+            this.ClientSize = new System.Drawing.Size(673, 787);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panel1);

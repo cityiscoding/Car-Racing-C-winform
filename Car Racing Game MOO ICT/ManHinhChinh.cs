@@ -35,5 +35,17 @@ namespace Car_Racing_Game_MOO_ICT
         {
             Program.ExitApplication();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmGame2 frmGame2 = new frmGame2();
+            this.Hide();
+            frmGame2.Show();
+        }
+
+        private void frmManHinhChinh_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

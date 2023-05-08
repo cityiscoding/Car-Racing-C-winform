@@ -161,6 +161,8 @@
   <ItemGroup>
     <Content Include="Resources\mainpic.jpg" />
     <Content Include="Resources\music.wav" />
+    <Content Include="Resources\mucsicGamePlay.wav" />
+    <Content Include="Resources\mucsicGamePlay2.wav" />
     <Content Include="Score\score.txt" />
   </ItemGroup>
   <ItemGroup />

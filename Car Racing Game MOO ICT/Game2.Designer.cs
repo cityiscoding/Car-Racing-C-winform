@@ -165,7 +165,6 @@
             this.roadTrack2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.roadTrack2.TabIndex = 4;
             this.roadTrack2.TabStop = false;
-            this.roadTrack2.Click += new System.EventHandler(this.roadTrack2_Click);
             // 
             // roadTrack1
             // 
@@ -237,6 +236,7 @@
             this.Name = "frmGame2";
             this.Text = "Game2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGame2_FormClosing);
+            this.Load += new System.EventHandler(this.frmGame2_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             this.panel1.ResumeLayout(false);

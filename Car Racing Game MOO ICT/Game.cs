@@ -8,30 +8,80 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Car_Racing_Game_MOO_ICT
 {
     public partial class frmGame : Form
     {
-
         int roadSpeed;
         int trafficSpeed;
         int playerSpeed = 12;
         int score;
         int carImage;
+        private SoundPlayer soundPlayer;
 
         Random rand = new Random();
         Random carPosition = new Random();
 
         bool goleft, goright;
 
-
         public frmGame()
         {
             InitializeComponent();
+            soundPlayer = new SoundPlayer("C:\\Project_Work\\VISUAL CODE\\Car-Racing-C-winform\\Car Racing Game MOO ICT\\Resources\\mucsicGamePlay.wav");
             ResetGame();
+
+        }
+        private void gameOver()
+        {
+
+            playSound();
+            gameTimer.Stop();
+            explosion.Visible = true;
+            player.Controls.Add(explosion);
+            explosion.Location = new Point(-8, 5);
+            explosion.BackColor = Color.Transparent;
+
+            award.Visible = true;
+            award.BringToFront();
+
+            btnStart.Enabled = true;
+            btnExit.Enabled = true;
+            using (StreamWriter writer = new StreamWriter("C:\\Project_Work\\VISUAL CODE\\Car-Racing-C-winform\\Car Racing Game MOO ICT\\Score\\score.txt", true))
+            {
+                writer.WriteLine(score.ToString());
+            }
+        }
+        private void ResetGame()
+        {
+            btnExit.Enabled = false;
+            btnStart.Enabled = false;
+            explosion.Visible = false;
+            award.Visible = false;
+            goleft = false;
+            goright = false;
+            score = 0;
+            award.Image = Properties.Resources.bronze;
+
+            roadSpeed = 12;
+            trafficSpeed = 15;
+
+            AI1.Top = carPosition.Next(200, 500) * -1;
+            AI1.Left = carPosition.Next(5, 200);
+
+            AI2.Top = carPosition.Next(200, 500) * -1;
+            AI2.Left = carPosition.Next(245, 422);
+
+            gameTimer.Start();
+            soundPlayer.Play();
+
         }
 
+        private void restartGame(object sender, EventArgs e)
+        {
+            ResetGame();
+        }
         private void keyisdown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.A)
@@ -43,7 +93,6 @@ namespace Car_Racing_Game_MOO_ICT
                 goright = true;
             }
         }
-
         private void keyisup(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.A)
@@ -55,8 +104,6 @@ namespace Car_Racing_Game_MOO_ICT
                 goright = false;
             }
         }
-
-
         private void gameTimerEvent(object sender, EventArgs e)
         {
 
@@ -122,8 +169,6 @@ namespace Car_Racing_Game_MOO_ICT
                 trafficSpeed = 27;
                 roadSpeed = 25;
             }
-
-
         }
 
         private void changeAIcars(PictureBox tempCar)
@@ -163,9 +208,7 @@ namespace Car_Racing_Game_MOO_ICT
                     break;
             }
 
-
             tempCar.Top = carPosition.Next(100, 400) * -1;
-
 
             if ((string)tempCar.Tag == "carLeft")
             {
@@ -177,56 +220,11 @@ namespace Car_Racing_Game_MOO_ICT
             }
         }
 
-        private void gameOver()
-        {
-            playSound();
-            gameTimer.Stop();
-            explosion.Visible = true;
-            player.Controls.Add(explosion);
-            explosion.Location = new Point(-8, 5);
-            explosion.BackColor = Color.Transparent;
-
-            award.Visible = true;
-            award.BringToFront();
-
-            btnStart.Enabled = true;
-            btnExit.Enabled = true;
-            using (StreamWriter writer = new StreamWriter("C:\\Project_Work\\Visual studio\\Top-Down-Car-Racing-game-in-windows-form\\Car Racing Game MOO ICT\\Score\\score.txt", true))
-            {
-                writer.WriteLine(score.ToString());
-            }
-        }
-        private void ResetGame()
-        {
-            btnExit.Enabled = false;
-            btnStart.Enabled = false;
-            explosion.Visible = false;
-            award.Visible = false;
-            goleft = false;
-            goright = false;
-            score = 0;
-            award.Image = Properties.Resources.bronze;
-
-            roadSpeed = 12;
-            trafficSpeed = 15;
-
-            AI1.Top = carPosition.Next(200, 500) *-1;
-            AI1.Left = carPosition.Next(5, 200);
-
-            AI2.Top = carPosition.Next(200, 500) * -1;
-            AI2.Left = carPosition.Next(245, 422);
-
-            gameTimer.Start();
-        }
-
-        private void restartGame(object sender, EventArgs e)
-        {
-            ResetGame();
-        }
 
         private void frmGame_FormClosing(object sender, FormClosingEventArgs e)
         {
             Program.ExitApplication();
+            soundPlayer.Stop();
         }
 
         private void btnThoatGame_Click(object sender, EventArgs e)
@@ -234,17 +232,19 @@ namespace Car_Racing_Game_MOO_ICT
             frmManHinhChinh mhc = new frmManHinhChinh();
             this.Hide();
             mhc.Show();
+            soundPlayer.Stop();
         }
         private void btnEnd_Click(object sender, EventArgs e)
         {
             frmManHinhChinh frmManHinhChinh = new frmManHinhChinh();
             this.Hide();
             frmManHinhChinh.Show();
+            soundPlayer.Stop();
         }
 
-        private void roadTrack2_Click(object sender, EventArgs e)
+        private void frmGame_Load(object sender, EventArgs e)
         {
-
+            soundPlayer.Play();
         }
 
         private void playSound()

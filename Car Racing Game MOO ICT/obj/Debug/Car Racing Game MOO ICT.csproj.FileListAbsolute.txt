@@ -22,3 +22,18 @@ C:\Project_Work\Visual studio\Top-Down-Car-Racing-game-in-windows-form\Car Racin
 C:\Project_Work\Visual studio\Top-Down-Car-Racing-game-in-windows-form\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmManHinhChinh.resources
 C:\Project_Work\Visual studio\Top-Down-Car-Racing-game-in-windows-form\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmGame2.resources
 C:\Project_Work\Visual studio\Top-Down-Car-Racing-game-in-windows-form\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmHighCore.resources
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\bin\Debug\Car Racing Game MOO ICT.exe.config
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\bin\Debug\Car Racing Game MOO ICT.exe
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\bin\Debug\Car Racing Game MOO ICT.pdb
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car Racing Game MOO ICT.csproj.AssemblyReference.cache
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car Racing Game MOO ICT.csproj.SuggestedBindingRedirects.cache
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmGame.resources
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmGame2.resources
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmHighCore.resources
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmManHinhChinh.resources
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.Properties.Resources.resources
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car_Racing_Game_MOO_ICT.frmThongTin.resources
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car Racing Game MOO ICT.csproj.GenerateResource.cache
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car Racing Game MOO ICT.csproj.CoreCompileInputs.cache
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car Racing Game MOO ICT.exe
+C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\obj\Debug\Car Racing Game MOO ICT.pdb

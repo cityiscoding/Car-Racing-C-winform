@@ -45,7 +45,7 @@ namespace Car_Racing_Game_MOO_ICT
         private void frmManHinhChinh_Load(object sender, EventArgs e)
         {
             // Khởi tạo đối tượng SoundPlayer để phát âm thanh
-            player = new SoundPlayer(@"C:\Project_Work\Visual studio\Top-Down-Car-Racing-game-in-windows-form\Car Racing Game MOO ICT\Resources\music.wav");
+            player = new SoundPlayer(@"C:\Project_Work\VISUAL CODE\Car-Racing-C-winform\Car Racing Game MOO ICT\Resources\music.wav");
             player.PlayLooping(); // Phát âm thanh liên tục 
         }
 

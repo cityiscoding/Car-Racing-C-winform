@@ -131,11 +131,10 @@
             this.roadTrack2.Location = new System.Drawing.Point(0, -2);
             this.roadTrack2.Margin = new System.Windows.Forms.Padding(4);
             this.roadTrack2.Name = "roadTrack2";
-            this.roadTrack2.Size = new System.Drawing.Size(633, 648);
+            this.roadTrack2.Size = new System.Drawing.Size(633, 641);
             this.roadTrack2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.roadTrack2.TabIndex = 4;
             this.roadTrack2.TabStop = false;
-            this.roadTrack2.Click += new System.EventHandler(this.roadTrack2_Click);
             // 
             // roadTrack1
             // 
@@ -208,6 +207,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Car Racing Game MOO ICT";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGame_FormClosing);
+            this.Load += new System.EventHandler(this.frmGame_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             this.panel1.ResumeLayout(false);

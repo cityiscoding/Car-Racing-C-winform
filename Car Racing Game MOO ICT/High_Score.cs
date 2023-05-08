@@ -28,7 +28,7 @@ namespace Car_Racing_Game_MOO_ICT
         {
             // Đọc dữ liệu từ file và lưu vào một danh sách các giá trị số
             List<int> scores = new List<int>();
-            using (StreamReader reader = new StreamReader("C:\\Project_Work\\Visual studio\\Top-Down-Car-Racing-game-in-windows-form\\Car Racing Game MOO ICT\\Score\\score.txt"))
+            using (StreamReader reader = new StreamReader("C:\\Project_Work\\VISUAL CODE\\Car-Racing-C-winform\\Car Racing Game MOO ICT\\Score\\score.txt"))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)

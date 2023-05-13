@@ -224,7 +224,6 @@ namespace Car_Racing_Game_MOO_ICT
         private void frmGame_FormClosing(object sender, FormClosingEventArgs e)
         {
             Program.ExitApplication();
-            soundPlayer.Stop();
         }
 
         private void btnThoatGame_Click(object sender, EventArgs e)
@@ -232,14 +231,12 @@ namespace Car_Racing_Game_MOO_ICT
             frmManHinhChinh mhc = new frmManHinhChinh();
             this.Hide();
             mhc.Show();
-            soundPlayer.Stop();
         }
         private void btnEnd_Click(object sender, EventArgs e)
         {
             frmManHinhChinh frmManHinhChinh = new frmManHinhChinh();
             this.Hide();
             frmManHinhChinh.Show();
-            soundPlayer.Stop();
         }
 
         private void frmGame_Load(object sender, EventArgs e)

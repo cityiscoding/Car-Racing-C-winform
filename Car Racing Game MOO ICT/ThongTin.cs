@@ -13,12 +13,10 @@ namespace Car_Racing_Game_MOO_ICT
 {
     public partial class frmThongTin : Form
     {
-        private SoundPlayer player;
         public frmThongTin()
         {
             InitializeComponent();
         }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             frmManHinhChinh mhc = new frmManHinhChinh();
@@ -29,11 +27,6 @@ namespace Car_Racing_Game_MOO_ICT
         private void frmThongTin_FormClosing(object sender, FormClosingEventArgs e)
         {
             Program.ExitApplication();
-        }
-
-        private void frmThongTin_Load(object sender, EventArgs e)
-        {
-            player.PlayLooping(); // Phát âm thanh liên tục 
         }
     }
 }

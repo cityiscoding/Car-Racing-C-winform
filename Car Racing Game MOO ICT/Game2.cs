@@ -27,7 +27,7 @@ namespace Car_Racing_Game_MOO_ICT
         public frmGame2()
         {
             InitializeComponent();
-            soundPlayer = new SoundPlayer("C:\\Project_Work\\VISUAL CODE\\Car-Racing-C-winform\\Car Racing Game MOO ICT\\Resources\\mucsicGamePlay2.wav");
+            soundPlayer = new SoundPlayer("C:\\Users\\Admin\\Documents\\Project_Work\\VISUAL CODE\\Car-Racing-C-winform\\Car Racing Game MOO ICT\\Resources\\mucsicGamePlay2.wav");
             ResetGame();
         }
 
@@ -66,7 +66,7 @@ namespace Car_Racing_Game_MOO_ICT
             gameTimer.Stop();
             btnStart.Enabled = true;
             btnExit.Enabled = true;
-            using (StreamWriter writer = new StreamWriter("C:\\Project_Work\\VISUAL CODE\\Car-Racing-C-winform\\Car Racing Game MOO ICT\\Score\\score.txt", true))
+            using (StreamWriter writer = new StreamWriter("C:\\Users\\Admin\\Documents\\Project_Work\\VISUAL CODE\\Car-Racing-C-winform\\Car Racing Game MOO ICT\\Score\\score.txt", true))
             {
                 writer.WriteLine(score.ToString());
             }
@@ -83,7 +83,22 @@ namespace Car_Racing_Game_MOO_ICT
         {
             txtScore.Text = "Score: " + score;
             score++;
+            if (score > 1 && score < 300)
+            {
+            }
 
+
+            if (score > 300 && score < 1000)
+            {
+                roadSpeed = 20;
+                trafficSpeed = 22;
+            }
+
+            if (score > 1000)
+            {
+                trafficSpeed = 27;
+                roadSpeed = 25;
+            }
 
             if (goleft == true && player.Left > 10)
             {
@@ -130,6 +145,7 @@ namespace Car_Racing_Game_MOO_ICT
             {
                 gameOver();
             }
+
         }
        
         private void keyisdown(object sender, KeyEventArgs e)

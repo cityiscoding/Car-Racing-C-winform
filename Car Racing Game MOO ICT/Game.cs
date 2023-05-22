@@ -29,7 +29,7 @@ namespace Car_Racing_Game_MOO_ICT
         public frmGame()
         {
             InitializeComponent();
-            soundPlayer = new SoundPlayer("C:\\Project_Work\\VISUAL CODE\\Car-Racing-C-winform\\Car Racing Game MOO ICT\\Resources\\mucsicGamePlay.wav");
+            soundPlayer = new SoundPlayer("C:\\Users\\Admin\\Documents\\Project_Work\\VISUAL CODE\\Car-Racing-C-winform\\Car Racing Game MOO ICT\\Resources\\mucsicGamePlay.wav");
             ResetGame();
 
         }
@@ -48,7 +48,7 @@ namespace Car_Racing_Game_MOO_ICT
 
             btnStart.Enabled = true;
             btnExit.Enabled = true;
-            using (StreamWriter writer = new StreamWriter("C:\\Project_Work\\VISUAL CODE\\Car-Racing-C-winform\\Car Racing Game MOO ICT\\Score\\score.txt", true))
+            using (StreamWriter writer = new StreamWriter("C:\\Users\\Admin\\Documents\\Project_Work\\VISUAL CODE\\Car-Racing-C-winform\\Car Racing Game MOO ICT\\Score\\score.txt", true))
             {
                 writer.WriteLine(score.ToString());
             }

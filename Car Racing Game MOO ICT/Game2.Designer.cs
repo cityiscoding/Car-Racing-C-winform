@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGame2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.player1 = new System.Windows.Forms.PictureBox();
             this.AI2 = new System.Windows.Forms.PictureBox();
             this.AI1 = new System.Windows.Forms.PictureBox();
@@ -41,8 +43,6 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.btnExit = new System.Windows.Forms.Button();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI2)).BeginInit();
@@ -68,6 +68,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(633, 639);
             this.panel1.TabIndex = 3;
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.BackColor = System.Drawing.Color.Transparent;
+            this.lbl2.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lbl2.Location = new System.Drawing.Point(355, 206);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(228, 44);
+            this.lbl2.TabIndex = 8;
+            this.lbl2.Text = "Player2 Win";
+            this.lbl2.Visible = false;
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.Color.Transparent;
+            this.lbl1.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lbl1.Location = new System.Drawing.Point(82, 206);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(228, 44);
+            this.lbl1.TabIndex = 7;
+            this.lbl1.Text = "Player1 Win";
+            this.lbl1.Visible = false;
             // 
             // player1
             // 
@@ -181,37 +207,12 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lbl1
-            // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.BackColor = System.Drawing.Color.Transparent;
-            this.lbl1.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lbl1.Location = new System.Drawing.Point(82, 206);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(240, 45);
-            this.lbl1.TabIndex = 7;
-            this.lbl1.Text = "Player1 Win";
-            this.lbl1.Visible = false;
-            // 
-            // lbl2
-            // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.BackColor = System.Drawing.Color.Transparent;
-            this.lbl2.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lbl2.Location = new System.Drawing.Point(355, 206);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(240, 45);
-            this.lbl2.TabIndex = 8;
-            this.lbl2.Text = "Player2 Win";
-            this.lbl2.Visible = false;
-            // 
             // frmGame2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 787);
+            this.ControlBox = false;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtScore);
